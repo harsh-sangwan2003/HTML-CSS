@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+
+<!-- Meta information around the webpage -->
+
+<head>
+    <!-- Name of the webpage -->
+    <title>
+        Pepcoding
+    </title>
+
+    <style>
+
+        /* Simple Selectors */
+
+        /* element selector */
+        h1 {
+            color: lightblue;
+        }
+
+        p {
+            background-color: lightpink;
+        }
+
+        /* id selector */
+        #unique {
+            text-decoration: underline;
+        }
+
+        /* class selector */
+        .common {
+            background-color: lightpink;
+        }
+
+        /* Combinator selectors */
+
+        /* descendant selector */
+        .common p{
+            color:lightcoral;
+        }
+
+        .common>p{
+            background-color: yellow;
+        }
+
+        /* sibling selector */
+        .commong + div{
+            color:red;
+        }
+
+        /* general sibling */
+        .common ~ div{
+
+            background-color: lightgreen;
+        }
+
+        /* Attribute Selectors */
+        label[for]{
+
+            color:pink;
+        }
+
+        label[for="name"]{
+            background-color: red;
+        }
+
+        input[type]{
+            background-color: black;
+        }
+
+
+    </style>
+
+</head>
+
+<!-- Content of the webpage -->
+
+<body>
+
+    <div class="common common2">
+
+        <div class="something1">Something</div>
+        <div class="something2">
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Minima, eaque!</p>
+        </div>
+        <div class="something3">Something</div>
+        <p>Helooo!</p>
+    </div>
+    <div class="sib">I am sibling</div>
+
+    <!-- Heading -->
+    <h1>Hello Evryone</h1>
+    <h2>Hello Evryone</h2>
+    <h3>Hello Evryone</h3>
+
+    <!-- Paragraph -->
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea, sequi.</p>
+
+    <!-- Hyperlink -->
+    <a href="https://www.google.com" target="_blank">Google</a>
+
+    <!-- Division -->
+    <div id="unique">
+        Hello
+        <p>Pepcoder</p>
+    </div>
+
+    
+
+    <div></div>
+    <div class="common">Hello</div>
+    <div></div>
+    <div class="common2">Different</div>
+
+    <!-- Unordered List -->
+    <ul>
+        <li>Item 1</li>
+        <li>Item 2</li>
+        <li>Item 3</li>
+    </ul>
+
+
+    <!-- Ordered List -->
+    <ol>
+        <li>Item 1</li>
+        <li>Item 2</li>
+        <li>Item 3</li>
+    </ol>
+
+    <!-- span -->
+    <span>Content Filling Tag</span>
+
+    <img src="https://picsum.photos/200/300" alt="pic">
+
+    <form action="">
+
+        <label for="name">Name</label>
+        <input type="text" id="name">
+
+        <label for="email">Email</label>
+        <input type="email" id="email">
+
+        <label for="passwd">Password</label>
+        <input type="password" id="passwd">
+
+        <label for="phone">Phone</label>
+        <input type="number" id="phone">
+    </form>
+</body>
+
+</html>

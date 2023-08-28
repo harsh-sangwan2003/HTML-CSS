@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Units</title>
+
+    <style>
+        .px {
+            background-color: lightblue;
+            font-size: 30px;
+        }
+
+        .rem {
+            font-size: 3rem;
+        }
+
+        .vh-vw {
+            font-size: 30vh;
+        }
+
+        .parent {
+            height: 10rem;
+            width: 30px;
+            background-color: lightgreen;
+        }
+
+        .child {
+            width: 100%;
+            height: 50%;
+            background-color: lightcoral;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="px">Hello</div>
+    <div class="rem">REM</div>
+    <div class="vh-vw">vh-vw</div>
+    <div class="parent">
+        <div class="child"></div>
+    </div>
+</body>
+
+</html>
